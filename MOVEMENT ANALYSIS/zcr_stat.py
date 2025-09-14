@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import os
 
-filename = r'c:\Users\kevin\OneDrive\Desktop\DATA - POSTER\DATASET - HIGH RISK 02\High_Risk02 [RAW MOVEMENT]\High Risk 02.h5'
-target_ID = 'XI-016162'   
+filename = r'path/to/your/file.h5'
+target_ID = 'Your_Sensor_ID' # Sensor ID for the Head
 
 if not os.path.exists(filename):
     print(f"File '{filename}' not found in the current directory.")
@@ -73,3 +73,4 @@ if filename:
     output_plot_name = f"{os.path.splitext(filename)[0]}_zcr_plot.png"
     plt.savefig(output_plot_name)
     print(f"Successfully generated and saved {output_plot_name}")
+
