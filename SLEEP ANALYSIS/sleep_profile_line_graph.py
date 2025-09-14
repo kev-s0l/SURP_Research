@@ -14,8 +14,8 @@ import numpy as np
 import matplotlib.dates as mdates
 
 # === CONFIG ===
-# Please update this path to your actual file location
-sleep_file = r'c:\Users\kevin\OneDrive\Desktop\DATA - POSTER\DATASET - HIGH RISK 02\High_Risk02 [CHILD TEMPLATE]\Sleep profile.txt'
+# Update this path to your actual file location
+sleep_file = r'path/to/your/sleep_profile.txt'
 
 # === PARSING ===
 try:
@@ -117,4 +117,5 @@ try:
 except FileNotFoundError:
     print(f"Could not find file '{sleep_file}'")
 except Exception as e:
+
     print(f"An error occurred: {e}")
