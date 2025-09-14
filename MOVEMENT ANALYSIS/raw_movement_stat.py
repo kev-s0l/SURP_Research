@@ -15,8 +15,8 @@ import matplotlib.pyplot as plt
 import datetime
 import matplotlib.dates as mdates
 
-filename = r'c:\Users\SOMNOmedics\Desktop\DATA - POSTER\DATASET - LOW RISK 02\Low_Risk02 [RAW MOVEMENT]\lowrisk02.h5'
-target_ID = '16162'
+filename = r'path/to/your/file.h5'
+target_ID = 'Your_Sensor_ID' # Sensor ID for the Head
 
 with h5py.File(filename, 'r') as f:
     if target_ID in f['Sensors']:
@@ -50,3 +50,4 @@ with h5py.File(filename, 'r') as f:
             plt.show()
         else:
             print(f"Missing Accelerometer or Time data for Sensor {target_ID}")
+
