@@ -350,7 +350,7 @@ class LENAExtractor:
 def main():
     """Main function to run the extractor"""
     # PUT YOUR FILE PATH HERE:
-    its_file_path = r"c:\Users\kevin\OneDrive\Desktop\DATA - POSTER\DATASET - HIGH RISK 02\High_Risk02 [LENA]\20250107_115931_063914.its"
+    its_file_path = r'path/to/your/file.its'
     
     # Initialize extractor
     extractor = LENAExtractor(its_file_path)
@@ -374,4 +374,5 @@ def main():
     print(f"\nExtraction complete! Check the '{output_dir}' folder for all CSV files.")
 
 if __name__ == "__main__":
+
     main()
