@@ -9,7 +9,7 @@ import matplotlib.dates as mdates
 
 warnings.filterwarnings("ignore")
 
-edf_file_path = r'c:\Users\kevin\OneDrive\Desktop\DATA - POSTER\DATASET - LOW RISK 02\Low_Risk02 [CHILD TEMPLATE]\LOWRISK_02_(1).edf'
+edf_file_path = r'path/to/your/file.edf'
 raw = mne.io.read_raw_edf(edf_file_path, preload=True)
 
 start_time = raw.info['meas_date']
@@ -135,4 +135,5 @@ plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))
 plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator())
 plt.xticks(rotation=45)
 plt.tight_layout()
+
 plt.show()
