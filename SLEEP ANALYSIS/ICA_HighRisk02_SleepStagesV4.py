@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Load the EDF file
-edf_file_path = "/Users/labuser/Desktop/SOMNOmedics Home Tests/HIghRisk02/HIghRisk02_(1).edf"
+edf_file_path = r'path/to/your/file.edf'
 raw = mne.io.read_raw_edf(edf_file_path, preload=True)
 
 # Define frequency bands for sleep stages (focused on Delta and Theta for infants)
