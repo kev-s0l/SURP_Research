@@ -14,9 +14,9 @@ from matplotlib.widgets import Slider
 
 # === 1. CONFIG ===
 # Please ensure these file paths are correct for your system
-filename = r'c:\Users\SOMNOmedics\Desktop\DATA - POSTER\DATASET - HIGH RISK 02\High_Risk02 [RAW MOVEMENT]\highrisk02_20240820-141937.h5'
-target_ID = 'XI-016162' # Sensor ID for the Head
-sleep_file = r'c:\Users\SOMNOmedics\Desktop\DATA - POSTER\DATASET - HIGH RISK 02\High_Risk02 [CHILD TEMPLATE]\Sleep profile.txt'
+filename = r'path/to/your/file.h5'
+target_ID = 'Your_Sensor_ID' # Sensor ID for the Head
+sleep_file = r'path/to/your/sleep_profile.txt'
 
 
 # === 2. DATA LOADING AND PROCESSING ===
@@ -168,4 +168,5 @@ slider = Slider(
 slider.on_changed(update)
 
 update(0)
+
 plt.show()
