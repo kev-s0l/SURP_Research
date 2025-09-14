@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import os
 
-filename = r'c:\Users\kevin\OneDrive\Desktop\DATA - POSTER\DATASET - LOW RISK 02\Low_Risk02 [RAW MOVEMENT]\Low Risk 02.h5'
-target_ID = '16162'   
+filename = r'path/to/your/file.h5'
+target_ID = 'Your_Sensor_ID'  
 
 if not os.path.exists(filename):
     print(f"File '{filename}' not found in the current directory.")
@@ -66,3 +66,4 @@ if filename:
     output_plot_name = f"{os.path.splitext(filename)[0]}_cov_plot.png"
     plt.savefig(output_plot_name)
     print(f"Successfully generated and saved {output_plot_name}")
+
